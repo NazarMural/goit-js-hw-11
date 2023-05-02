@@ -1,0 +1,43 @@
+button {
+    outline: none;
+    padding: 0;
+}
+
+.search-form__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    transform: translateX(268px);
+
+    height: 30px;
+    width: 40px;
+
+    border: none;
+    border-left: 1px solid #777777;
+    border-radius: 0 2px 2px 0;
+    background-color: #dbdbdb;
+
+    &:hover, :focus {
+        background-color: #313030;
+    }
+
+    &:hover .search-form__icon-btn, :focus .search-form__icon-btn {
+        fill: #ffffff;
+    }
+}
+
+.search-form__icon-btn {
+    fill: #000000;
+}
+
+.download-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.is-hidden {
+    display: none;
+}
