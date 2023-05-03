@@ -9,8 +9,9 @@ export function createArrayElementsMarkup(arrayElements) {
   return arrayElements
     .map(
       element => `<div class="photo-card">
-        <img class="photo-card__img" src="${element.webformatURL}" alt="${element.tags}" 
-            loading="lazy" />
+        <a class="gallery__item" href="${element.largeImageURL}" data-lightbox="gallery">
+          <img class="gallery__image" src="${element.webformatURL}" alt="${element.tags}" loading="lazy" />
+        </a >
         <div class="info">
         <p class="info-item">
         <b>Likes</b>

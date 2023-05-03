@@ -1,6 +1,19 @@
+body {
+    margin: 0;
+    background-color: bisque;
+}
+
+.search-subject-container {
+    padding-top: 20px;
+}
+
 .search-subject {
+    
     display: flex;
     justify-content: center;
+
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 .search-subject__text {
@@ -18,14 +31,15 @@
     gap: 20px;
 }
 
-.photo-card {
-
-}
-
-.photo-card__img {
+.gallery__image {
     display: block;
     height: 200px;
     width: 300px;
+}
+
+.photo-card {
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .info {
@@ -33,9 +47,12 @@
     justify-content: center;
     gap: 10px;
 
-    border-bottom: 2px solid #eee;
-    border-right: 2px solid #eee;
-    border-left: 2px solid #eee;
+    background-color: azure;
+
+    border-radius: 0px 0px 20px 20px;
+    border-bottom: 2px solid #313131;
+    border-right: 2px solid #313131;
+    border-left: 2px solid #313131;
 }
 
 .info-item {
